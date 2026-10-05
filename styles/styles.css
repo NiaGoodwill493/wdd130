@@ -1,0 +1,33 @@
+
+/* Colors: #FF7F64 coral, #F4FFF5 white, #BBE1C3 light green, #0F5257 evergreen, #0B3142 navy */
+
+body {
+    margin: 0;
+}
+
+header, footer {
+    background-color:#FF7F64;
+    padding: 10px;
+}
+
+img {
+    width: 300px;
+}
+
+nav {
+    padding: inherit;
+}
+
+a {
+    padding: 10px;
+    padding: inherit;
+}
+
+h1 {
+    font-family: "Lucida Handwriting", cursive;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
