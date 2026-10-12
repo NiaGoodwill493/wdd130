@@ -1,0 +1,54 @@
+body {
+    background-color: #ffecd7;
+}
+
+.card {
+    background-color: #008db1;
+    border: #004e63 solid 4px;
+    margin: auto;
+    font-family: Helvetica, sans-serif;
+    width: 34%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+hgroup {
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    margin: 20px auto 10px;
+}
+
+hgroup a {
+    color: #91e4fb;
+    text-decoration: none;
+    margin: auto;
+}
+
+img {
+    border: white solid 4px;
+    width: 70%;
+    margin: 15px auto;
+}
+
+ul {
+    color: white;
+    margin: auto;
+    line-height: 1.5;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+#quote {
+    color: #ffd783;
+    font-family: "Brush Script MT", cursive;
+    margin: 15px auto 30px;
+    width: 80%;
+    line-height: 1.5;
+    font-size: 1.2em;
+}
