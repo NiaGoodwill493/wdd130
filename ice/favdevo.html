@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="favorite_devo/styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <table>
+          <tr>
+            <th>Speaker</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>Cindy Goodwill</td>
+            <td>With All Your Heart, Might, Mind, and Strength</td>
+            <td>BYU-Idaho</td>
+            <td>May 2025</td>
+          </tr>
+          <tr>
+            <td>Lawrence E. Corbridge</td>
+            <td>Stand Forever</td>
+            <td>BYU-Provo</td>
+            <td>January 2019</td>
+          </tr>
+          <tr>
+            <td>Brian K. Ashton</td>
+            <td>Finding Your Own Sacred Grove</td>
+            <td>BYU-Pathway</td>
+            <td>September 2026</td>
+          </tr>
+        </table>
+        <form id="new_devo">
+          <fieldset>
+            <legend>Add a Devotional</legend>
+            <label for="speaker">Speaker</label>
+            <input type="text" id="speaker" name="speaker">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title">
+            <label for="location_list">Location</label>
+            <input type="text" list="locations" name="location" id="location_list" autocomplete="off">
+              <datalist id="locations">
+                <option value="BYU-Provo">
+                <option value="BYU-Idaho">
+                <option value="BYU-Hawaii">
+                <option value="BYU-Pathway">
+                <option value="Ensign College">
+              </datalist>
+            <label for="date">Date</label>
+            <input type="month" id="date" name="date">
+            <input type="submit" id="submit" value="Add Devotional" onclick="alert('Thank you! The devotional has been recorded.')">
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <script>
+      const form = document.getElementById("new_devo");
+      form.addEventListener("submit", function(event) {
+        event.preventDefault();
+      });
+    </script>
+  </div>
+</body>
+</html>
