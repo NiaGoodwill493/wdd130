@@ -1,37 +1,92 @@
 
-/* Colors: #FF7F64 coral, #F4FFF5 white, #BBE1C3 light green, #0F5257 evergreen, #0B3142 navy */
+/* Colors: 
+Dark: #010001 black, #2b0504/#60302b dark umber 
+Accent: #874000 chocolate, #f79d5c peach, #b75d69/#d47784 rose
+Off-white: #f7f2ec cream */
+
+/* General Styles */
 
 body {
     margin: 0;
-}
-
-main {
-    min-height: 80vh;
-}
-
-header, footer {
-    background-color:#FF7F64;
-    padding: 10px;
-}
-
-img {
-    width: 300px;
-}
-
-nav {
-    padding: inherit;
-}
-
-a {
-    padding: 10px;
-    padding: inherit;
-}
-
-h1 {
-    font-family: "Lucida Handwriting", cursive;
+    background-color: #f7f2ec;
 }
 
 #content {
     max-width: 1600px;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.tag_list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Header Styles */
+
+header{
+    padding: 10px;
+}
+
+#logo_link {
+    width: 75px;
+}
+
+nav {
+    padding: inherit;
+    display: flex;
+}
+
+#projects_header {
+    background-color: #f7f2ec;
+    color: #010001;
+}
+
+/* Pill Tab Styles */
+
+.type1 {
+    background-color: #2b0504;
+    color:#f79d5c;
+}
+
+.type2 {
+    background-color: lavender;
+}
+
+.type3 {
+    background-color: pink;
+}
+
+.type4 {
+    background-color: peachpuff;
+}
+
+.project_card {
+    border: 2px #2b0504 solid;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+/* Text Content Styles */
+
+/* Footer Styles */
+
+footer{
+    background-color:#f79d5c;
+    padding: 10px;
+}
+
+/* Temporary Styles */
+
+img {
+    max-width: 100px;
+}
+
+li a {
+    padding: 0;
 }
