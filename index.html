@@ -10,8 +10,8 @@
     </head>
     <body>
         <div id="content">
-            <header class="type1" id="full_header">
-                <nav class="type1">
+            <header id="header">
+                <nav class="type1" id="nav_bar">
                     <a href="index.html"><img id="logo_link" src=images/logo.png alt="logo"></a>
                     <a href="index.html">Home</a>
                     <a href="pages/projects.html">Projects</a>
@@ -19,14 +19,14 @@
                     <a href="wwr/" target="_blank">Oar Else White Water Rafting</a>
                     <a href="pages/ice_challenges.html">ICE Challenges</a>
                 </nav>
-                <div id="big_header">
+            </header>
+            <main>
+                <div class="type1" id="big_header">
                     <h1>Big Title</h1>
                     <h2>Subtitle</h2>
                     <!-- potential little design image -->
                     <img src="images/beards_at_byui.png" alt="">
                 </div>
-            </header>
-            <main>
                 <section id="about_me" class="type2">
                     <h2>About Me</h2>
                     <p>Stuff about me. lorem ipsum dolor sit amet consectetur adipiscing elit mollit magna soluta quis consectetur dolores et voluptas quod facere facilis dolor in at nisi incididunt maxime nulla illum temporibus adipiscing</p>
@@ -143,7 +143,7 @@
                     </section>
                 </section>
             </main>
-            <footer class="type1">
+            <footer class="type1" id="footer">
                 <a href="https://www.linkedin.com/in/nia-lamb/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
                 <a href="https://www.facebook.com/nia.g.lamb" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
                 <a href="https://www.instagram.com/niaglamb/" target="_blank"><img src="images/facebook.png" alt="Instagram"></a>
@@ -154,5 +154,16 @@
                 <p>&copy; 2026 Nia Lamb. All rights reserved.</p>
             </footer>
         </div>
+        <script>
+            const navbar = document.querySelector("#header");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 20) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+        </script>
     </body>
 </html>
