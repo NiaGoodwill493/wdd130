@@ -482,7 +482,6 @@ button:hover {
     border: 6px solid #60302b;
     border-radius: 20px;
     box-shadow: 5px 5px 10px #2b0504;
-    outline: none;
 }
 
 /* Ice Challenges Main */
@@ -544,6 +543,34 @@ button:hover {
 
 .project_card .button::before {
     background-color: #874000;
+}
+
+/* Project Pages Main */
+
+.project_summary {
+    margin: 50px 0 30px;
+}
+
+.project_summary h2 {
+    margin: 5px 0 10px;
+}
+
+.project_links {
+    float: right;
+    position: relative;
+    z-index: 5;
+    margin: 0 -3px 20px 20px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project_links h2 {
+    margin: 5px 0 10px;
+}
+
+.project_links .tag_list {
+    flex-wrap: wrap;
 }
 
 /* Footer Styles */
