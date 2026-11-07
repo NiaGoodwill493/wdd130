@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nia Lamb &dash; Proof Portfolio</title>
+        <link rel="stylesheet" href="../../styles/styles.css">
+        <link rel="icon" type="image/png" href="../../images/favicon.png">
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <header class="header">
+                <nav class="type1 nav_bar">
+                    <a href="../../index.html"><img id="logo_link" src=../../images/logo.png alt="logo"></a>
+                    <a href="../../index.html"  class="button">Home</a>
+                    <a href="../projects.html"  class="button">Projects</a>
+                    <a href="../about_me.html"  class="button">About Me</a>
+                    <a href="../../wwr/" target="_blank"  class="button">Oar Else White Water Rafting</a>
+                    <a href="../ice_challenges.html"  class="button">ICE Challenges</a>
+                </nav>
+            </header>
+            <main>
+                <div class="type1 big_header">
+                    <div class="text">
+                        <h1>Proof Portfolio</h1>
+                        <h2>Elementary Proofs &ndash; <time datetime="2025-07-23">07/23/26</time></h2>
+                    </div>
+                    <img src="../../images/flourish.png" alt="">
+                </div>
+                <section class="type3 project_links">
+                    <h2>Links and Tags</h2>
+                    <ul>
+                        <li><a href="https://www.overleaf.com/project/686d5a81491b8c38a50a0a75/share#f23ffaaa9d31a2f88fb6706d1aeb820ff569334c50ae14c3" target="_blank">Overleaf</a></li>
+                        <li><a href="files/proof_portfolio.pdf" target="_blank">PDF</a></li>
+                    </ul>
+                    <ul class="tag_list">
+                        <li>Math</li>
+                        <li>Proofs</li>
+                        <li>LaTeX</li>
+                    </ul>
+                </section>
+                <section class="type2 project_summary">
+                    <h2>Abstract/Summary</h2>
+                    <p>lorem ipsum dolor sit amet consectetur adipiscing elit mollit magna soluta quis consectetur dolores et voluptas quod facere facilis dolor in at nisi incididunt maxime nulla illum temporibus adipiscing lorem ipsum dolor sit amet consectetur adipiscing elit mollit magna soluta quis consectetur dolores et voluptas quod facere facilis dolor in at nisi incididunt maxime nulla illum temporibus adipiscing</p>
+                </section>
+                <section class="project_main text">
+                    <h2>Challenges</h2>
+                    <p>lorem ipsum dolor sit amet consectetur adipiscing elit mollit magna soluta quis consectetur dolores et voluptas quod facere facilis dolor in at nisi incididunt maxime nulla illum temporibus adipiscing lorem ipsum dolor sit amet consectetur adipiscing elit mollit magna soluta quis consectetur dolores et voluptas quod facere facilis dolor in at nisi incididunt maxime nulla illum temporibus adipiscing</p>
+
+                    <h2>What I Learned</h2>
+                    <p>lorem ipsum dolor sit amet consectetur adipiscing elit mollit magna soluta quis consectetur dolores et voluptas quod facere facilis dolor in at nisi incididunt maxime nulla illum temporibus adipiscing lorem ipsum dolor sit amet consectetur adipiscing elit mollit magna soluta quis consectetur dolores et voluptas quod facere facilis dolor in at nisi incididunt maxime nulla illum temporibus adipiscing</p>
+
+                    <h2>Skills Developed</h2>
+                    <p>lorem ipsum dolor sit amet consectetur adipiscing elit mollit magna soluta quis consectetur dolores et voluptas quod facere facilis dolor in at nisi incididunt maxime nulla illum temporibus adipiscing lorem ipsum dolor sit amet consectetur adipiscing elit mollit magna soluta quis consectetur dolores et voluptas quod facere facilis dolor in at nisi incididunt maxime nulla illum temporibus adipiscing</p>
+
+                    <h2>Example Proof</h2>
+                    <p><strong>Problem 33.</strong></p>
+                    <p>Notice that</p>
+                        $$\begin{align*}
+                        1&=1 \\
+                        1+3&=4 \\
+                        1+3+5&=9 \\
+                        1+3+5+7&=16 \\
+                        1+3+5+7+9&=25.
+                        \end{align*}$$
+                    <p>Make a conjecture about the sum of odd numbers by giving a general formula for what you see above. Then prove that your formula is valid by using mathematical induction.</p>
+                    <p><strong>Solution.</strong></p>
+                    <p>We will prove that, for all natural numbers \(x\), we know the statement \((2(1)-1)+(2(2)-1)+...+(2x-1)=x^2\) is true. If we simplify the expression \((2(1)-1)+(2(2)-1)+...+(2x-1)\) we find that it is equal to \(1+3+5+...+(2x-1)\). Let \(S=\{x \in \mathbb{N}\mid 1+3+5+...+(2x-1)=x^2\}\). We will show that \(S\) is the set of all natural numbers, or \(S= \mathbb{N}\). We will use the Principle of Mathematical Induction. We know that \(2(1)-1 = 1 = 1^2\), therefore \(1 \in S\). Let \(k \in \mathbb{N}\). Suppose \(k \in S\). We know \(1+3+5+...+(2k-1)=k^2\). We want to show \(1+3+5+...+(2k-1)+(2(k+1)-1)=(k+1)^2\). We compute:</p>
+                        $$\begin{align*}
+                        \underbrace{1+2+3+\cdots + (2k-1)} + (2(k+1)-1)
+                        &=k^2 + (2(k+1)-1) && \text{ (replace using the assumption) }\\
+                        &=k^2 + 2k+2-1 && \text{ (simplify) }\\
+                        &= k^2 + 2k+1 && \text{ (simplify) }\\
+                        &=(k+1)^2 && \text{(factor).}
+                        \end{align*}$$
+                    <p>Thus we see that \(1+3+5+...+(2k-1)+(2(k+1)-1)=(k+1)^2\). Therefore, we know \(k+1 \in S\). Because we know \(k+1 \in S\), we see that if an element \(k \in S\) then \(k+1 \in S\). Since we know \(1\in S\) and if an element \(k \in S\) then \(k+1 \in S\) we know by the Principle of Mathematical Induction that \(S= \mathbb{N}\).</p>
+                </section>
+            </main>
+            <footer class="type1 footer">
+                <a href="index.html"><img id="logo_link" src=../../images/logo.png alt="logo"></a>
+                <a href="../../pages/about_me.html">About Me</a>
+                <a href="../../pages/projects.html">Projects</a>
+                <a href="#">Jump to Top</a>
+                <p>Contact Me:</p>
+                <a href=mailto:goodneg11@gmail.com>goodneg11@gmail.com</a>
+                <a href="https://www.linkedin.com/in/nia-lamb/" target="_blank"><img src="../../images/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.facebook.com/nia.g.lamb" target="_blank"><img src="../../images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/niaglamb/" target="_blank"><img src="../../images/instagram.png" alt="Instagram"></a>
+                <p class="copyright">&copy; 2026 Nia Lamb. All rights reserved.</p>
+            </footer>
+        </div>
+        <script>
+            const navbar = document.querySelector(".header");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 20) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+        </script>
+    </body>
+</html>
